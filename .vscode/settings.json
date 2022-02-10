@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": ".venv/bin/python",
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "python.terminal.activateEnvironment": false,
+    "cSpell.language": "en,pt,pt_BR",
+    //"python.terminal.activateEnvironment": true
+}

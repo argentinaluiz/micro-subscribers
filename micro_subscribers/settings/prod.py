@@ -1,0 +1,1 @@
+from micro_subscribers.settings.base import *

@@ -1,0 +1,6 @@
+{
+    "/static/subscriptions_app/subscriptions/build/index.js": "/static/subscriptions_app/subscriptions/build/index.js",
+    "/static/my_auth_app/my_auth/build/index.js": "/static/my_auth_app/my_auth/build/index.js",
+    "/static/my_auth_app/my_auth/build/manifest.js": "/static/my_auth_app/my_auth/build/manifest.js",
+    "/static/common_app/common/build/vendor.js": "/static/common_app/common/build/vendor.js"
+}

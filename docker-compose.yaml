@@ -1,0 +1,25 @@
+version: "3"
+   
+services:
+  
+  app:
+    build: .
+    entrypoint: dockerize -wait tcp://db:5432 -timeout 40s ./.docker/entrypoint.sh
+    environment:
+      - DJANGO_SETTINGS_MODULE=micro_subscribers.settings.dev
+    volumes:
+      - .:/home/python/app
+    ports:
+      - 8001:8000
+    depends_on:
+      - db
+    extra_hosts: 
+      - "host.docker.internal:172.17.0.1"
+
+  db:
+    build: .docker/postgres
+    volumes:
+      - ./.docker/dbdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=micro_subscribers
+      - POSTGRES_PASSWORD=root
